@@ -39,9 +39,10 @@ h1 {
     grid-template-columns: 100px 1fr;
     grid-template-rows: 75px 75px 75px 75px ;
     grid-template-areas: 
-    ". total-bill"
-    "btn btn";
-    margin: 0 auto;
+    ". total-tip"
+    ". total-bill";
+   
+    margin: 50px auto;
     /* border: 2px solid ;  */
     padding: 25px;
 }
@@ -65,6 +66,12 @@ h1 {
 
 #total-bill {
     grid-area: total-bill;
+    height: 25px;
+    width: 250px;
+}
+
+#total-tip {
+    grid-area: total-tip;
     height: 25px;
     width: 250px;
 }
