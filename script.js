@@ -19,10 +19,14 @@ btn.addEventListener('click', function(){
     }
     else{
         alert("Tip percentage cannot be NULL!");
+        return false;
     }
     if(totalPeople){
         if(totalPeople<0){
             alert('total people value cannot be negative!');
+        }
+        if(parseFloat(totalPeople)-parseInt(totalPeople)>0.0){
+            alert('total people cannot be in decimal value!');
         }
     }
     else{
