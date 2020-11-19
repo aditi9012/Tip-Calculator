@@ -4,7 +4,7 @@ btn.addEventListener('click', function(){
     let billAmount = document.getElementById('bill-amount').value;
     let tipPercentage = document.getElementById('tip-percentage').value;
     let totalPeople=document.getElementById('num-people').value;
-    if(billAmount){
+    if(billAmount){//writing testcases
         if(billAmount<0.0){
           alert('bill value cannot be negative!');
         }
@@ -33,7 +33,12 @@ btn.addEventListener('click', function(){
         alert('enter total number of people!');
     }
  let tipAmount = document.getElementById('tip-amount').value = billAmount / tipPercentage;
- document.getElementById('tip-amount').value=parseFloat(billAmount)/parseFloat(tipPercentage*totalPeople);
-document.getElementById('total-bill').value = (parseFloat(billAmount) + parseFloat(tipAmount))/parseFloat(totalPeople);
+ let tip=document.getElementById('tip-amount').value=parseFloat(billAmount)/parseFloat(tipPercentage*totalPeople);
+let total=document.getElementById('total-bill').value = (parseFloat(billAmount) + parseFloat(tipAmount))/parseFloat(totalPeople);
+
+
+ //append content
+ tip.innerHTML = "$" + parseFloat(billAmount)/parseFloat(tipPercentage*totalPeople);
+ total.innerHTML = "$" + (parseFloat(billAmount) + parseFloat(tipAmount))/parseFloat(totalPeople);
 
 })
