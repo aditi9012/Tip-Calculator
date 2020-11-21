@@ -9,5 +9,5 @@
 1. Tip amount to be paid per person
 2. Total amount to be paid per person
 
-#A Tip Calculator to share the bill among the people with Bill amount,Tip percent and number of people as an input and will calculate Tip per person and Bill to be paid by each person by using HTML,CSS and Javascript.
+#A Tip Calculator to share the bill among the people with Bill amount,Tip percent and number of people as an input and will calculate Tip per person and Bill to be paid by each person by using HTML,CSS and Javascript and wrote test cases using jest to check the application.
 
